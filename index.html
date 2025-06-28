@@ -1,24 +1,284 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook Sesión 21.5: Taller de Gestión de Proyecto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
-  <script src="script.js"></script>
-</body>
 
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 21.5: Taller de Gestión de Proyecto</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos:</strong>
+                                    <ul>
+                                        <li>Que los estudiantes detallen aún más su plan de proyecto generado por IA.</li>
+                                        <li>Que utilicen a Xolo para desglosar tareas complejas ('épicas') en subtareas manejables ('historias de usuario').</li>
+                                        <li>Que aprendan a realizar estimaciones de tiempo más realistas basadas en la experiencia.</li>
+                                        <li>Que comprendan los fundamentos de la gestión de proyectos ágil.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">⚡Saludo Interactivo con IA:</strong> Activación y contextualización de la misión.</li>
+                                        <li><strong class="tactic-highlight">⚡"I Can Statement" + Desafío:</strong> Clarificación de objetivos y presentación del reto del día.</li>
+                                        <li><strong class="tactic-highlight">⚡AI GYM:</strong> Diálogo estratégico con Xolo para la conceptualización.</li>
+                                        <li><strong class="tactic-highlight">⚡Brain Spark:</strong> Ejecución técnica y práctica aumentada por la Dupla Dinámica.</li>
+                                        <li><strong class="tactic-highlight">⚡Gnius STORM:</strong> Showcase de prototipos, síntesis y reflexión.</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Un plan de proyecto final, granular y realista, con tareas de alto nivel reemplazadas por listas de subtareas detalladas y estimaciones de tiempo refinadas.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Chat "Agente Gnius" (Xolo) activo y funcionando.</li>
+                                        <li>Los documentos de "Plan de Rediseño" de los estudiantes de la sesión anterior.</li>
+                                        <li>Presentación de diapositivas (Diapositivas 1-10).</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna):</strong>
+                                            <ul>
+                                                <li>Asegurar que Xolo está operativo.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización:</strong> Entender los conceptos básicos de la gestión ágil, especialmente el desglose de "épicas" en "historias de usuario" y la importancia de la estimación basada en la experiencia.</li>
+                                        <li><strong>Preparación de Ejemplos:</strong> Tener un ejemplo claro de una tarea grande y cómo se desglosa en subtareas más pequeñas y manejables.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Saludo de IA y Contexto ⏰ 3 minutos</h2>
+                <p>Introducir la sesión como un taller para refinar la hoja de ruta, pasando de director a productor detallista.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Bienvenida y Contexto de la Misión ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 2) El facilitador presenta la misión de hoy: desglosar el plan hasta que cada paso sea claro y ejecutable.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Saludos, jefes de proyecto. Tienen un plan de alto nivel, una buena hoja de ruta. Pero en el mundo real, el diablo está en los detalles. Una tarea como 'Rediseñar unión' no es una sola acción, es un conjunto de subtareas. Hoy, nos pondremos el sombrero de un 'Scrum Master' o un productor detallista. Vamos a desglosar su plan hasta que cada paso sea claro, conciso y ejecutable.</p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Activación de la IA ⏰ 2 minutos</h3>
+                            <p>El facilitador guía a los alumnos para que inicien su sesión de trabajo con Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Inicien su sesión con Xolo: 'Hola Xolo, listo para la Misión 21.5', seguido de su nombre, perfil y gustos. Esperen su confirmación.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: "I Can Statement" y Presentación del Desafío ⏰ 5 minutos</h2>
+                <p>Presentar los conceptos de desglose de tareas y estimación realista.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Desglose y Estimación ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 3) El facilitador introduce los conceptos de "épicas" e "historias de usuario" y la importancia de la estimación realista.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Un plan es útil solo si es realista. Una tarea como 'Rediseñar Pieza' es demasiado vaga. Un buen gestor de proyectos desglosa tareas grandes (llamadas 'épicas') en tareas más pequeñas y específicas (o 'historias de usuario'). Además, las estimaciones de tiempo de la IA son genéricas. Ustedes se conocen mejor. Hoy, refinarán las estimaciones para que se ajusten a su ritmo real de trabajo. El objetivo es un cronograma de producción detallado.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Declaración del "I Can Statement" ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 4) El facilitador presenta el objetivo de aprendizaje de la sesión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">El objetivo de este taller es dominar la gestión detallada. Al final, podrán decir: <strong>'Yo puedo tomar un plan de proyecto de alto nivel, desglosarlo en subtareas detalladas y estimar de forma realista los tiempos necesarios para cada una, creando un cronograma de proyecto accionable.'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: A.I. GYM (Desglose y Estimación) ⏰ 10 minutos</h2>
+                <p>Fase de diálogo con Xolo para aprender la técnica de desglose de tareas y la importancia de la estimación honesta.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: La Técnica de Desglose ⏰ 5 minutos</h3>
+                            <p>(Proyectar Diapositiva 5) El facilitador verbaliza la técnica de desglose de Xolo, usándola como ejemplo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Entremos al A.I. GYM. Xolo actuará como su 'Scrum Master' para facilitar el desglose. Tomemos una tarea como ejemplo: 'T2.1: Rediseñar unión Base-Brazo (60 min)'. Es demasiado grande. Xolo les preguntaría: '¿Qué pasos debo seguir?'. La respuesta se convertiría en subtareas: 2.1.1: Abrir Part Studio (5 min). 2.1.2: Editar croquis del eje (10 min). 2.1.3: Crear nuevo croquis para el tornillo (15 min), etc. Ahora la tarea es una secuencia clara y la estimación es más precisa.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: La Guía de Estimación ⏰ 5 minutos</h3>
+                            <p>(Proyectar Diapositiva 6) El facilitador transmite la guía de Xolo para realizar estimaciones realistas basadas en la experiencia.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Ahora, sobre la estimación. Xolo les aconseja: "Sean honestos con sus estimaciones. Es mejor sobrestimar ligeramente que subestimar y generar retrasos." Usen su experiencia. ¿Cuánto tardaron realmente en hacer un croquis complejo en la Misión 3.5? Usen esos datos reales para informar sus nuevas estimaciones de tiempo para cada subtarea.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Brain Spark (Creando el Cronograma Detallado) ⏰ 22 minutos</h2>
+                <p>Fase de trabajo práctico donde los estudiantes seleccionan una tarea, la desglosan con Xolo y actualizan su plan de proyecto.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Desglose y Estimación Detallada ⏰ 22 minutos</h3>
+                            <p>(Proyectar Diapositiva 7) Los estudiantes ejecutan el ciclo completo de desglose y refinamiento de su plan de proyecto.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Ahora, al Brain Spark. Abran su "Plan de Rediseño". Elijan la tarea más grande y compleja. Inicien el diálogo de desglose con Xolo: **'Quiero desglosar mi tarea T2.1.'** Xolo les guiará con preguntas para dividirla en 4-5 subtareas. Asignen un tiempo realista a cada una. Finalmente, actualicen su documento: reemplacen la tarea de alto nivel con la lista detallada de subtareas y sus nuevas estimaciones. El resultado debe ser un cronograma granular y accionable.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM (Cierre de Sesión) ⏰ 5 minutos</h2>
+                <p>Fase final para compartir el desglose de una tarea y reflexionar sobre el valor de la planificación detallada.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Think (Reflexión Individual) ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 8) El facilitador guía una reflexión sobre el proceso de desglose y estimación.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                     Tiempo. Observen su cronograma detallado. Reflexionen: <strong>¿Cómo cambió su estimación de tiempo total para la tarea después de desglosarla? ¿Cómo un plan tan detallado puede reducir el estrés al iniciar un trabajo complejo?</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Pair (Discusión en Parejas) ⏰ 2 minutos</h3>
+                            <p>Los estudiantes comparten el desglose de una de sus tareas.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                    En parejas, compartan el desglose que hicieron para una de sus tareas. Expliquen cómo cambiaron las estimaciones y si el plan ahora parece más manejable.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Share (Síntesis y Cierre) ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 9) El facilitador consolida la sesión, posicionando a los estudiantes como productores ejecutivos.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                    Han pasado de ser directores de proyecto a ser productores ejecutivos. Han aprendido a ver el bosque y también cada uno de los árboles. Este nivel de planificación detallada es lo que permite a los equipos profesionales construir sistemas complejos, desde videojuegos hasta cohetes, de manera predecible y exitosa. Su plan es sólido, su estrategia es clara. Están más que listos para la implementación.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
